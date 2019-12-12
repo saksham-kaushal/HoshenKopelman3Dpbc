@@ -8,7 +8,7 @@ Modified 2002-03-09 Tobin Fricke
 Modified substantially 2004-04-21 by Tobin Fricke
 
 
-# INSTRUCTIONS TO EXECUTE :
+## INSTRUCTIONS TO EXECUTE :
 
 1. Set variables in parameters.h header file, especially system sizes, number of configurations, and source file location.
 2. Compile and execute the required data_format program to get lattice site occupancies in required format. Outputs are stored in F_DATA_DIR directory. Commands to compile and execute the program are mentioned in the topmost docstring of the C code.
@@ -16,14 +16,22 @@ Modified substantially 2004-04-21 by Tobin Fricke
 4. Run execute.py Python3 script. Number and size of clusters for different configs can be obtained from CLUSTER_STATS_DIR directory. The exact lattice with cluster labels for each configuration can be obtained from CLUSTER_LATTICE_DIR.
 
 
-# DIRECTORY STRUCTURE :
+## DIRECTORY STRUCTURE :
 
 parameters.h header file contains all global parameters definitions.
+
 execute.py Python3 script executes HK algorithm and generates all required information about clusters.
+
 hk3d_pbc.c C program file contains implementation of HK algorithm for 3D lattices with pbc. This programs needs to be compiled separately with compilation instructions at the top of the file; however, it is executed automatically via execute.py script, and does not need to be executed separately.
+
 data_format.c and likewise named files are used to change the values of lattice occupancies to required format.
+
 INFILE file contains the raw(unformatted) input spin values for all configurations.
+
 F_DATA_DIR directory contains formatted data obtained by executing data_format.c which requires INFILE for initial data. Files are separate for different configurations.
+
 OUT_DIR directory contains temporary cluster information required to compute clusters and their sizes.
+
 CLUSTER_STATS_DIR directory contains a file for each configuration mentioning total number of clusters and size of each cluster sorted in decreasing order.
+
 CLUSTER_LATTICE_DIR directory has a file for each configuration containing lattice occupation sites replaced with their corresponding cluster numbers.
