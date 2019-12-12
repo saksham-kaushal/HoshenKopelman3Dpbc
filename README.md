@@ -7,6 +7,8 @@ Distributed under the terms of the GNU Public License.
 Modified 2002-03-09 Tobin Fricke
 Modified substantially 2004-04-21 by Tobin Fricke
 
+*http://www.ocf.berkeley.edu/~fricke/projects/hoshenkopelman/hoshenkopelman.html__*
+
 
 ## INSTRUCTIONS TO EXECUTE :
 
