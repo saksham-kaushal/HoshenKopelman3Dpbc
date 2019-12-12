@@ -22,7 +22,7 @@ Modified substantially 2004-04-21 by Tobin Fricke
 
 * ___parameters.h___ header file contains all global parameters definitions.
 
-* ___execute.py___ Python3 script executes HK algorithm and generates all required information about clusters.
+* ___main.py___ Python3 script executes HK algorithm and generates all required information about clusters.
 
 * ___hk3d_pbc.c___ C program file contains implementation of HK algorithm for 3D lattices with pbc. This programs needs to be compiled separately with compilation instructions at the top of the file; however, it is executed automatically via execute.py script, and does not need to be executed separately.
 
