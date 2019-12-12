@@ -18,20 +18,20 @@ Modified substantially 2004-04-21 by Tobin Fricke
 
 ## DIRECTORY STRUCTURE :
 
-*___parameters.h___ header file contains all global parameters definitions.
+* ___parameters.h___ header file contains all global parameters definitions.
 
-*___execute.py___ Python3 script executes HK algorithm and generates all required information about clusters.
+* ___execute.py___ Python3 script executes HK algorithm and generates all required information about clusters.
 
-*___hk3d_pbc.c___ C program file contains implementation of HK algorithm for 3D lattices with pbc. This programs needs to be compiled separately with compilation instructions at the top of the file; however, it is executed automatically via execute.py script, and does not need to be executed separately.
+* ___hk3d_pbc.c___ C program file contains implementation of HK algorithm for 3D lattices with pbc. This programs needs to be compiled separately with compilation instructions at the top of the file; however, it is executed automatically via execute.py script, and does not need to be executed separately.
 
-*___data_format.c___ and likewise named files are used to change the values of lattice occupancies to required format.
+* ___data_format.c___ and likewise named files are used to change the values of lattice occupancies to required format.
 
-*___INFILE file___ contains the raw(unformatted) input spin values for all configurations.
+* ___INFILE file___ contains the raw(unformatted) input spin values for all configurations.
 
-*___F_DATA_DIR___ directory contains formatted data obtained by executing data_format.c which requires INFILE for initial data. Files are separate for different configurations.
+* ___F_DATA_DIR___ directory contains formatted data obtained by executing data_format.c which requires INFILE for initial data. Files are separate for different configurations.
 
-*___OUT_DIR___ directory contains temporary cluster information required to compute clusters and their sizes.
+* ___OUT_DIR___ directory contains temporary cluster information required to compute clusters and their sizes.
 
-*___CLUSTER_STATS_DIR___ directory contains a file for each configuration mentioning total number of clusters and size of each cluster sorted in decreasing order.
+* ___CLUSTER_STATS_DIR___ directory contains a file for each configuration mentioning total number of clusters and size of each cluster sorted in decreasing order.
 
-*___CLUSTER_LATTICE_DIR___ directory has a file for each configuration containing lattice occupation sites replaced with their corresponding cluster numbers.
+* ___CLUSTER_LATTICE_DIR___ directory has a file for each configuration containing lattice occupation sites replaced with their corresponding cluster numbers.
